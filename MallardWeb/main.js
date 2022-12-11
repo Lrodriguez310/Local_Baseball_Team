@@ -85,8 +85,8 @@ window.onmousemove = e => {
 }
 
 // for bubble
-
-/*const wrapper = document.getElementById("bubble-wrapper");
+/*
+const wrapper = document.getElementById("bubble-wrapper");
 
 const animateBubble = x => {
     const bubble = document.createElement("div");
@@ -100,4 +100,4 @@ const animateBubble = x => {
     setTimeout(() => wrapper.removeChild(bubble), 2000);
 }
 
-window.onmousemove = e => animateBubble(e.clientX); */
+window.onmousemove = e => animateBubble(e.clientX);  */
