@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallards</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+   
+
+</head>
+<body>
+    <header id="header">
+        <img src="logo.webp">
+    </header>
+    <section>
+        
+        <h2 id="text"><span>RiverSide</span><br>Mallards</h2>
+        <img src="./bird1.png" id="bird1">
+        <img src="./bird2.png" id="bird2">
+        <img src="./forest.png" id="forest">
+        <a href="home.html" id="btn">Home</a>
+
+        <img src="./rocks.png" id="rocks">
+        <img src="./water.png" id="water">
+    </section>
+
+    <div class="sec">
+        <h2>Mallards Team Go!</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Quas tenetur facere harum vel quos error ducimus neque est, <br>
+            a consequuntur, molestiae minus sapiente suscipit nisi <br>
+            repudiandae dolor corporis. Eum tenetur praesentium velit <br>
+            sequi veniam corporis deserunt minus repellat porro adipisci <br>
+            itaque, expedita, animi voluptates error, ab explicabo! Ab, <br>
+            tenetur earum!</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 20 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -3 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    
+</body>
+</html>
